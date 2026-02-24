@@ -40,11 +40,10 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2024-01-01' = {
     name: 'Standard_LRS'
   }
   properties: {
-    allowBlobPublicAccess: true
-   networkAcls: {
-        defaultAction: 'Deny'
-      }
+    networkAcls: {
+      defaultAction: 'Deny'
     }
+    allowBlobPublicAccess: true
   }
 }
 
